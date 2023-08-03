@@ -2,9 +2,11 @@ package br.com.golfsierra.demo.api;
 
 import java.time.LocalDateTime;
 
+import jakarta.validation.constraints.NotBlank;
+
 public record PlaceRequest(
 
-		String name, String slug){
+		@NotBlank String name,@NotBlank String slug){
 
 
 }
